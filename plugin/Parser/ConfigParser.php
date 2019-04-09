@@ -2,12 +2,11 @@
 
 use Rancherize\Configuration\Configuration;
 use Rancherize\Configuration\PrefixConfigurationDecorator;
-use RancherizeMailhog\Config\MailhogConfig;
 use RancherizeRabbitmq\Config\RabbitmqConfig;
 
 /**
  * Class ConfigParser
- * @package RancherizeMailhog\Parser
+ * @package RancherizeRabbitmq\Parser
  */
 class ConfigParser {
 

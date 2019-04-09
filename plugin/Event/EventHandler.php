@@ -6,7 +6,7 @@ use RancherizeRabbitmq\Parser\ConfigParser;
 
 /**
  * Class EventHandler
- * @package RancherizeMailhog\Event
+ * @package RancherizeRabbitmq\Event
  */
 class EventHandler {
 	/**
@@ -35,7 +35,7 @@ class EventHandler {
 			return;
 
 		$rabbitmqService = new Service();
-		$rabbitmqService->setName( 'Mailhog' );
+		$rabbitmqService->setName( 'Rabbitmq' );
 		$rabbitmqService->setImage( 'rabbitmq:3-management' );
 
 		$mainService->addLink( $rabbitmqService, 'rabbitmq' );

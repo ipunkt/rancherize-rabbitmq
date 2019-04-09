@@ -1,8 +1,8 @@
 <?php namespace RancherizeRabbitmq\Config;
 
 /**
- * Class MailhogConfig
- * @package RancherizeMailhog\Config
+ * Class RabbitmqConfig
+ * @package RancherizeRabbitmq\Config
  */
 class RabbitmqConfig {
 

@@ -8,7 +8,7 @@ use RancherizeRabbitmq\Parser\ConfigParser;
 use Symfony\Component\EventDispatcher\EventDispatcher;
 
 /**
- * Class MailhogProvider
+ * Class RabbitmqProvider
  */
 class RabbitmqProvider implements Provider {
 
