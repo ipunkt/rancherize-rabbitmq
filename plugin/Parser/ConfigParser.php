@@ -15,7 +15,7 @@ class ConfigParser {
 	 * @param Configuration $configuration
 	 */
 	public function parse( Configuration $configuration ) {
-		$mailhogConfiguration = new PrefixConfigurationDecorator( $configuration, 'mailhog.' );
+		$rabbitmqConfiguration = new PrefixConfigurationDecorator( $configuration, 'rabbitmq.' );
 
 		$config = new RabbitmqConfig();
 
@@ -23,10 +23,10 @@ class ConfigParser {
 			return $config;
 
 		$config->setEnabled( true );
-		if ( $mailhogConfiguration->has( 'port' ) )
+		if ( $rabbitmqConfiguration->has( 'port' ) )
 			$config->setExposed( true );
 
-		$config->setPort( $mailhogConfiguration->get( 'port' ) );
+		$config->setPort( $rabbitmqConfiguration->get( 'port' ) );
 
 		return $config;
 
