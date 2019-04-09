@@ -1,0 +1,25 @@
+{
+  "name": "ipunkt/rancherize-rabbimq",
+  "description": "Rancherize plugin to add rabbitmq as a message queue for local development",
+  "type": "project",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Sven Speckmaier",
+      "email": "sps@ipunkt.biz"
+    }
+  ],
+  "autoload":{
+    "psr-4": {
+      "RancherizeRabbitmq\\": "plugin/"
+    }
+  },
+
+  "require": {},
+  "require-dev": {
+    "ipunkt/rancherize": "^2.23.5"
+  },
+  "extra":{
+    "rancherize-provider":"RancherizeRabbitmq\\RabbitmqProvider"
+  }
+}
