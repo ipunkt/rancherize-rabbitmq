@@ -1,5 +1,5 @@
 {
-  "name": "ipunkt/rancherize-rabbimq",
+  "name": "ipunkt/rancherize-rabbitmq",
   "description": "Rancherize plugin to add rabbitmq as a message queue for local development",
   "type": "project",
   "license": "MIT",
